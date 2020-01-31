@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="select">
+			<div data-type="customSelect"></div>
+		</div>
+		<div class="info">
+			<div class="ditails"></div>
+		</div>
+	</div>
+
+	<script src="select.js"></script>
+	<script>
+		let customSelectDiv = new customSelect("customSelect");
+		customSelectDiv.createCustomSelect({
+			BlockClass: 'custom-select-block',
+			ListBlockClass: 'custom-select-list-block',
+			ListItemBlockClass: 'custom-select-list-item-block',
+			ListItemInputClass: 'custom-select-list-item-input',
+			ResultBlockClass: 'ditails'	
+		});
+	</script>
+</body>
+</html>
